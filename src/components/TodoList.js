@@ -7,7 +7,9 @@ const TodoList = ({ todoList, handleClickRemove }) => (
     {todoList.map((todo, index) => (
       <li id={index}>
         <TodoRow todo={todo} id={index} key={index}></TodoRow>
-        <Button onClick={() => handleClickRemove(index)}>❌</Button>
+        <Button onClick={() => handleClickRemove(index)}>
+          <span>❌</span>
+        </Button>
       </li>
     ))}
   </Container>
