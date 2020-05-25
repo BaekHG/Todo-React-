@@ -49,6 +49,7 @@ const Container = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  /* background-color: black; */
   background: linear-gradient(
       to right,
       rgba(20, 20, 20, 0.1) 10%,

@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import Clock from './Clock';
+import Todo from './Todo';
 function Content() {
-  return <Container>Hello!!!!!!!!!!!!</Container>;
+  return (
+    <Container>
+      <Clock />
+      <Todo />
+    </Container>
+  );
 }
 
 export default Content;
@@ -13,6 +19,6 @@ const Container = styled.div`
   top: 33px;
   width: 500px;
   height: calc(100% - 33px);
-  color: black;
-  background: white;
+  color: white;
+  background: transparent;
 `;
