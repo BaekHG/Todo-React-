@@ -1,20 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 import TodoList from './TodoList';
+// import LoadingOverlay from 'react-loading-overlay';
+
 const TODO = 'Todo_React';
 class Todo extends React.Component {
   state = {
     toDoList: [],
   };
   handleInputKeyPress = (event) => {
-    if (event.target.value === '') {
-      alert('Todo를 입력해주세요.');
-      return;
-    }
     const {
       target: { value },
     } = event;
+
     if (event.key === 'Enter') {
+      if (value === '') {
+        alert('Todo를 입력해주세요.');
+        return;
+      }
       this.setState(
         (state) => ({ toDoList: [...state.toDoList, value] }),
         () => localStorage.setItem(TODO, JSON.stringify(this.state.toDoList))
@@ -76,6 +79,7 @@ const Button = styled.button`
   background: transparent;
   font-size: 15px;
   color: white;
+  cursor: pointer;
 `;
 const TodoContainer = styled.div`
   text-align: center;

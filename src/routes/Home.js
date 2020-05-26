@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Content from '../components/Content';
+
 class Home extends React.Component {
   state = {
     query: '',
@@ -30,6 +31,7 @@ class Home extends React.Component {
     );
   }
 }
+
 const Input = styled.input`
   position: absolute;
   top: 0;

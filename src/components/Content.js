@@ -21,4 +21,8 @@ const Container = styled.div`
   height: calc(100% - 33px);
   color: white;
   background: transparent;
+  overflow-y: auto;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
