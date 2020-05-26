@@ -17,7 +17,7 @@ const TodoList = ({ todoList, handleClickRemove }) => (
 
 const Button = styled.button`
   border: none;
-  font-size: 32px;
+  font-size: 26px;
   background-color: transparent;
   cursor: pointer;
 `;
