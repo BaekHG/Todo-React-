@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Example from './Example';
 // const express = require('express');
 // const app = express();
 

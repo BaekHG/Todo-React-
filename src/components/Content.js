@@ -13,6 +13,7 @@ function Content() {
 
 export default Content;
 
+
 const Container = styled.div`
   position: absolute;
   right: 0;

@@ -18,6 +18,7 @@ class TodoRow extends React.Component {
   render() {
     const { todo } = this.props;
     return (
+      // ()=> console.log(event.target.value)
       <Container>
         <Text>{todo}</Text>
       </Container>
@@ -33,7 +34,9 @@ const Container = styled.span`
 const Text = styled.div`
   display: inline-block;
   cursor: pointer;
-  font-size: 26px;
+  padding-left: 10px;
+  font-size: 24px;
+  font-weight: lighter;
   /* &:hover {
     opacity: 0.4;
   } */

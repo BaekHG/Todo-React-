@@ -5,6 +5,7 @@ function App() {
   return (
     <HashRouter>
       <Route path="/" exact={true} component={Home}></Route>
+      {/* <Route path='/' */}
     </HashRouter>
   );
 }
